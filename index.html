@@ -1,11 +1,52 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
-<head>
-    <title>Exercise 3</title>
-</head>
-<body>
-    <center>
-        <h1>Daftar Planet</h1>
-    </center>
-</body>
-</html>
+    <head>
+        <title>Exercise 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="planet.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Planet List</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                </div>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <div clas="input-group-prepend">
+                            <span class="input-group-text" id=" ">Filter</span>
+                        </div>
+                        <input type="text" class="form-control" oninput="f_filter()" placeholder="Filter"
+                        id="filter">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="info">
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Rotation Period</th>
+                                    <th scope="col">Orbital Period</th>
+                                    <th scope="col">Diameter</th>
+                                    <th scope="col">Climate</th>
+                                    <th scope="col">Gravity</th>
+                                    <th scope="col">Terrain</th>
+                                    <th scope="col">Surface Water<z/th>
+                                    <th scope="col">Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+            </html>
